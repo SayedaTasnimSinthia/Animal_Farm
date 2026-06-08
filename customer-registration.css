@@ -1,0 +1,241 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FCFFE8; 
+    color: #103647;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.logo-circle, .logo-circle.big {
+    background-image: url('images/logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FAFFD7;
+}
+
+
+.main-header {
+    background-color: #13705A;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: #FFFFFF;
+    font-size: 36px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+.register-hero-banner {
+    background-color: #FCFFE8;
+    height: auto;
+    padding: 60px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-main-title {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: #0B464E;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.welcome-text {
+    font-size: 30px;
+    font-weight: 400;
+    display: block; 
+    margin-top: 10px;
+    text-decoration: none !important;
+}
+
+
+.register-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 20px 100px 20px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input-group label {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: #2A6979;
+}
+
+.input-field-box {
+    position: relative;
+    width: 100%;
+}
+
+.input-field-box input {
+    width: 100%;
+    height: 70px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    outline: none;
+}
+
+.field-icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #2A6979;
+    pointer-events: none;
+}
+
+
+.form-submit-btn {
+    width: 100%;
+    max-width: 400px;
+    height: 75px;
+    margin: 20px auto 0 auto;
+    background: #2E661B;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.form-submit-btn:hover {
+    background-color: #1f4712;
+}
+
+.form-redirect-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-redirect-link a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #32784E;
+    text-decoration: underline;
+}
+
+
+.main-footer {
+    background-color: #13705A;
+    color: white;
+    padding: 60px 80px 20px 80px;
+}
+
+
+.logo-circle.big {
+    width: 80px;
+    height: 80px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links, .footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.subscribe-box {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-box input {
+    background: #EAE3A1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 220px;
+    outline: none;
+}
+
+.go-btn {
+    background: #F7C35F;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    border-top: 1px solid white;
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: right;
+}

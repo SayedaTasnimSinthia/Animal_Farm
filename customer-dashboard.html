@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Farm 360 - Customer Dashboard</title>
+    <link rel="stylesheet" href="customer-dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;900&family=Nunito+Sans:wght@400;700;900&family=Oleo+Script+Swash+Caps&family=Poppins:wght@700;900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-area">
+            <div class="logo-circle"></div>
+            <span class="logo-text">Animal Farm 360</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="contact.php">Contact Us</a>
+            <a href="product.php">Products</a>
+            <a href="#" onclick="logoutUser()">Logout</a>
+           
+            <button class="user-profile-btn">
+                <span class="user-emoji">🙍‍♂️</span>
+                <span id="dynamic-username">Sayeda Tasnim Sinthia</span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="dashboard-workspace">
+       
+        <aside class="sidebar-navigation">
+            <button class="side-icon active" onclick="navigateTo('customer-dashboard.html')" title="Quick Links Dashboard">🏠</button>
+            <button class="side-icon" onclick="navigateTo('profile.php')" title="Profile Info">👤</button>
+            <button class="side-icon" onclick="navigateTo('order-history.php')" title="Order History">📄</button>
+            <button class="side-icon" onclick="navigateTo('cart.php')" title="Cart View">🛍️</button>
+            <button class="side-icon" onclick="navigateTo('invoices.php')" title="Invoices">🧾</button>
+            <button class="side-icon" onclick="navigateTo('book-visit.php')" title="Book A Visit">📅</button>
+            <button class="side-icon logout-side" onclick="logoutUser()" title="Logout Securely">⏻️</button>
+        </aside>
+
+        <main class="main-content-panel">
+           
+            <section class="dashboard-hero-banner">
+                <h1 class="page-main-title">DASHBOARD 🗂️</h1>
+            </section>
+
+            <h2 class="quicklinks-title">Quick Links</h2>
+
+            <div class="dashboard-grid">
+               
+                <div class="menu-card" onclick="navigateTo('profile.php')">
+                    <div class="card-icon-img icon-profile"></div>
+                    <h3>Profile</h3>
+                </div>
+
+                <div class="menu-card" onclick="navigateTo('order-history.php')">
+                    <div class="card-icon-img icon-orders"></div>
+                    <h3>Order history</h3>
+                </div>
+
+                <div class="menu-card" onclick="navigateTo('cart.php')">
+                    <div class="card-icon-img icon-cart"></div>
+                    <h3>Cart</h3>
+                </div>
+
+                <div class="menu-card" onclick="navigateTo('invoices.php')">
+                    <div class="card-icon-img icon-invoices"></div>
+                    <h3>Invoices</h3>
+                </div>
+
+                <div class="menu-card" onclick="navigateTo('book-visit.php')">
+                    <div class="card-icon-img icon-visit"></div>
+                    <h3>Book A Visit</h3>
+                </div>
+
+                <div class="menu-card" onclick="logoutUser()">
+                    <div class="card-icon-img icon-logout"></div>
+                    <h3>Logout</h3>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo-circle big"></div>
+                <span class="logo-text">Animal Farm 360</span>
+            </div>
+            <div class="footer-links">
+                <h4>About</h4>
+                <a href="faq.html">FAQ</a>
+                <a href="about-us.html">About Us</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-conditions.html">Terms & Condition</a>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our Weekly Newsletter & Receive Latest Update</p>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Enter your mail here...">
+                    <button class="go-btn">Go</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Animal Farm 360 | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="customer-dashboard.js"></script>
+</body>
+</html>

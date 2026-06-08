@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Farm 360 - Login Gateway</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;900&family=Nunito+Sans:wght@400;700;900&family=Oleo+Script+Swash+Caps&family=Poppins:wght@400;700;900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-area">
+            <div class="logo-circle"></div>
+            <span class="logo-text">Animal Farm 360</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="product.html">Products</a>
+            <a href="cart.html">Cart 🛍️</a>
+        </nav>
+    </header>
+
+    <section class="gateway-title-banner">
+        <h1 class="page-main-title">Who Are You❓</h1>
+    </section>
+
+    <main class="gateway-container">
+        <div class="portal-grid">
+            
+            <div class="portal-card" onclick="selectPortal('customer')">
+                <div class="vector-graphic icon-customer"></div>
+                <h2>CUSTOMER</h2>
+            </div>
+
+            <div class="portal-card" onclick="selectPortal('employee')">
+                <div class="vector-graphic icon-employee"></div>
+                <h2>EMPLOYEE</h2>
+            </div>
+
+            <div class="portal-card" onclick="selectPortal('admin')">
+                <div class="vector-graphic icon-admin"></div>
+                <h2>ADMIN</h2>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo-area">
+                    <div class="logo-circle big"></div>
+                    <span class="logo-text">Animal Farm 360</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>About</h4>
+                <a href="faq.html">FAQ</a>
+                <a href="about-us.html">About Us</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-conditions.html">Terms & Condition</a>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our Weekly Newsletter & Receive Latest Update</p>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Enter your mail here...">
+                    <button class="go-btn">Go</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Animal Farm 360 | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

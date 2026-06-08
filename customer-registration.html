@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Farm 360 - Customer Registration</title>
+    <link rel="stylesheet" href="customer-registration.css">
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;900&family=Nunito+Sans:wght@400;700;900&family=Oleo+Script+Swash+Caps&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-area">
+            <div class="logo-circle"></div>
+            <span class="logo-text">Animal Farm 360</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="product.html">Products</a>
+            <a href="cart.html">Cart 🛍️</a>
+        </nav>
+    </header>
+
+    <section class="register-hero-banner">
+        <h1 class="page-main-title">REGISTER 📝 <span class="welcome-text">Before we proceed further...</span></h1>
+    </section>
+
+    <main class="register-container">
+        <form class="form-wrapper" action="process.php" method="POST">
+           
+            <div class="input-group">
+                <label for="reg-name">Full Name</label>
+                <div class="input-field-box">
+                    <input type="text" id="reg-name" name="fullName" placeholder="Enter your full name..." required>
+                    <span class="field-icon">👤</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="reg-email">Email</label>
+                <div class="input-field-box">
+                    <input type="email" id="reg-email" name="email" placeholder="Enter your email address..." required>
+                    <span class="field-icon">✉️</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="reg-password">Password</label>
+                <div class="input-field-box">
+                    <input type="password" id="reg-password" name="password" placeholder="Create a strong password..." required>
+                    <span class="field-icon">🔒</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="reg-confirm-password">Re-enter Your Password</label>
+                <div class="input-field-box">
+                    <input type="password" id="reg-confirm-password" name="confirmPassword" placeholder="Repeat your password to verify..." required>
+                    <span class="field-icon">🔒</span>
+                </div>
+            </div>
+
+            <button type="submit" name="register_action" class="form-submit-btn">Register</button>
+
+            <div class="form-redirect-link">
+                <a href="customer-login.html">Already Have An Account? Click Here To Login</a>
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo-circle big"></div>
+                <span class="logo-text">Animal Farm 360</span>
+            </div>
+            <div class="footer-links">
+                <h4>About</h4>
+                <a href="faq.html">FAQ</a>
+                <a href="about-us.html">About Us</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-conditions.html">Terms & Condition</a>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our Weekly Newsletter & Receive Latest Update</p>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Enter your mail here...">
+                    <button class="go-btn">Go</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Animal Farm 360 | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

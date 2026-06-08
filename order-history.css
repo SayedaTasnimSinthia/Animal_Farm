@@ -1,0 +1,278 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FCFFE8; 
+    color: #000000;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.logo-circle, .logo-circle.big {
+    background-image: url('images/logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FAFFD7;
+}
+
+.main-header {
+    background-color: #13705A;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: #FFFFFF;
+    font-size: 36px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.user-profile-btn {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.dashboard-workspace {
+    display: flex;
+    width: 100%;
+    min-height: 900px;
+}
+
+
+
+.sidebar-navigation {
+    width: 86px;
+    background-color: #07202C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    gap: 45px;
+}
+
+
+.logout-side {
+    margin-top: 0; 
+}
+
+.side-icon {
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: none;
+    color: #838383;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.side-icon:hover, .side-icon.active {
+    color: #2078BF;
+}
+
+
+
+
+.main-content-panel {
+    flex: 1;
+    padding: 50px 80px;
+}
+
+.order-main-title {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    color: #1C6A31;
+    text-decoration: underline;
+    margin-bottom: 45px;
+}
+
+
+.history-table-card {
+    background: #FFFFFF;
+    box-shadow: 0px 30px 40px #E3F3FF;
+    border-radius: 10px;
+    padding: 50px;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #E0E0E0; 
+}
+
+.table-row:last-child {
+    border-bottom: none; 
+}
+
+.table-header-row {
+    border-bottom: 2px solid #000000;
+}
+
+.table-cell {
+    flex: 1;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+}
+
+
+.table-header-row .table-cell {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+
+.id-text {
+    font-family: 'Ubuntu', sans-serif;
+    color: #555555;
+}
+
+.price-text {
+    font-weight: 700;
+}
+
+
+.status-badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 158px;
+    height: 43px;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #000000;
+}
+
+.status-processing {
+    background-color: #62B0EE; 
+}
+
+.status-completed {
+    background-color: #57E1B0;
+}
+
+.status-cancelled {
+    background-color: #F4585B;
+}
+
+
+.main-footer {
+    background-color: #13705A;
+    color: white;
+    padding: 60px 80px 20px 80px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links, .footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.logo-circle.big {
+    width: 80px;
+    height: 80px;
+}
+
+
+
+.subscribe-box {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-box input {
+    background: #EAE3A1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 220px;
+    outline: none;
+}
+
+.go-btn {
+    background: #F7C35F;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    border-top: 1px solid white;
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: right;
+}

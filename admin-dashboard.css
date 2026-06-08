@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FCFFE8; 
+    color: #000000;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+    
+    /* Dynamic stretch framework anchors the footer layout directly to bottom */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.logo-circle, .logo-circle.big {
+    background-image: url('images/logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FAFFD7;
+}
+
+.icon-products { background-image: url('images/1.jpg'); }
+.icon-customers { background-image: url('images/2\'.avif'); }
+.icon-employees { background-image: url('images/3.avif'); }
+
+
+.main-header {
+    background-color: #13705A;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: #FFFFFF;
+    font-size: 36px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 20px; 
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #FAFFD7;
+}
+
+.admin-profile-btn {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 10px 25px; 
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 18px; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.hero-showcase-banner {
+    width: 100%;
+    background-color: #FCFFE8;
+    padding: 60px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title-group {
+    text-align: center;
+}
+
+.hero-main-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 50px; 
+    color: #054C39;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.hero-sub-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    color: #054C39;
+}
+
+.admin-workspace-area {
+    flex: 1; 
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quicklinks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%;
+}
+
+.quicklink-card {
+    background: #FFFFFF;
+    box-shadow: 0px 30px 40px #E3F3FF;
+    border-radius: 10px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.quicklink-card:hover {
+    transform: translateY(-4px);
+}
+
+.card-icon {
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-label {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #000000;
+    text-align: center;
+}
+
+.main-footer {
+    background-color: #13705A;
+    color: white;
+    padding: 60px 80px 20px 80px;
+    margin-top: auto; 
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-circle.big {
+    width: 60px; 
+    height: 60px;
+}
+
+.footer-links, .footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links h4, .footer-newsletter h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.subscribe-box {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-box input {
+    background: #EAE3A1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 220px;
+    height: 40px;
+    outline: none;
+}
+
+.go-btn {
+    background: #F7C35F;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    border-top: 1px solid white;
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: right;
+}

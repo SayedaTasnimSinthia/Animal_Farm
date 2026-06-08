@@ -1,0 +1,529 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFFD7;
+    color: #1E1E1E;
+    font-family: 'Poppins', sans-serif;
+}
+.logo-circle {
+    background-image: url('images/logo.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.logo-circle.big {
+    background-image: url('images/logo.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.intro-main-img { background-image: url('images/image\ 6.jpg');}
+.livestock-big-banner-img { background-image: url('images/photo-1687997080696-e26811153e15.avif'); }
+
+
+.cattle-bg { background-image: url('images/229f511e3f540d77c8d5e4f6e6bbf83e.jpg'); }
+.sheep-bg { background-image: url('images/pngtree-sheep-picture-png-image_20040400.png'); }
+.goat-bg { background-image: url('images/goar.jpg'); }
+
+.honey-bg { background-image: url('images/honey.jpg'); }
+.cheese-bg { background-image: url('images/cheese.jpg'); }
+.egg-bg { background-image: url('images/egg.jpg'); }
+.milk-bg { background-image: url('images/images.jpg'); }
+
+
+.avatar-annie { background-image: url('images/a.jpg'); }
+.avatar-allan { background-image: url('images/m.avif'); }
+.avatar-ann { background-image: url('images/ann.avif'); }
+
+
+.farmer-jenny { background-image: url('images/team-img-01.jpg'); }
+.farmer-cam { background-image: url('images/team-img-02.jpg.png')}
+.farmer-paul { background-image: url('images/portrait-office-worker-laptop-17336676.webp'); }
+.farmer-carla { background-image: url('images/download.avif'); }
+
+
+
+.intro-main-img, .livestock-big-banner-img, .animal-img, 
+.product-img, .user-avatar, .farmer-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #D9D9D9;
+}
+
+
+.main-header {
+    background-color: #13705A;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #FAFFD7;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: #FFFFFF;
+    font-size: 36px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #FAFFD7;
+}
+
+.login-btn {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.intro-section {
+    background-color: #F5FFAE;
+    padding: 80px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.intro-images {
+    position: relative;
+    width: 500px;
+    height: 550px;
+}
+
+.green-deco-box {
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    background-color: #326155;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.intro-main-img {
+    position: absolute;
+    width: 420px;
+    height: 480px;
+    top: 30px;
+    left: 40px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.project-badge {
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    background-color: #6D8C54;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    color: white;
+    width: 300px;
+}
+
+.badge-num {
+    font-family: 'Livvic', sans-serif;
+    font-size: 32px;
+}
+
+.badge-title {
+    font-family: 'Livvic', sans-serif;
+    font-size: 14px;
+}
+
+.intro-content {
+    flex: 1;
+}
+
+.intro-content h1 {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 900;
+    color: #627040;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.tagline {
+    font-size: 22px;
+    color: #326155;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.intro-content h2 {
+    font-size: 18px;
+    color: #627040;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.intro-content h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-family: 'Livvic', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.points p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.livestock-section {
+    padding: 80px;
+    display: flex;
+    gap: 50px;
+}
+
+.livestock-left {
+    width: 45%;
+}
+
+.green-info-card {
+    background-color: #21685B;
+    color: white;
+    padding: 40px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.green-info-card h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.livestock-big-banner-img {
+    height: 350px;
+    border-radius: 16px;
+}
+
+.livestock-right {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.animal-card {
+    background-color: #FFFFFF;
+    border: 1px solid #165052;
+    border-radius: 16px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.animal-img {
+    width: 100px;
+    height: 120px;
+    border-radius: 4px;
+}
+
+.animal-info h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.animal-info .links a {
+    color: #116E59;
+    font-weight: 500;
+    margin-right: 15px;
+    text-decoration: underline; 
+}
+
+
+.animal-info .links span {
+    color: #116E59;
+    font-weight: 500;
+    margin-right: 15px; 
+    cursor: default;
+}
+
+.see-more-btn {
+    background: white;
+    border: 1px solid #165052;
+    padding: 15px;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #204E51;
+    cursor: pointer;
+}
+
+.products-section {
+    padding: 80px;
+}
+
+.center-title {
+    text-align: center;
+    font-size: 42px;
+    color: #204E51;
+    margin-bottom: 15px;
+}
+
+.center-subtitle {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    font-size: 18px;
+    color: #1E1E1E;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 25px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.product-img {
+    height: 160px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.product-card h4 {
+    color: #204E51;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.center-link-box {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.badge-label {
+    background: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: #404A3D;
+    margin-top: 10px;
+}
+
+.arrow-btn {
+    width: 50px;
+    height: 45px;
+    border: 1px solid #404A3D;
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reviews-section, .farmers-section {
+    padding: 80px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.review-card {
+    background: white;
+    border-radius: 25px;
+    padding: 35px;
+    position: relative;
+}
+
+.quote-mark {
+    font-size: 60px;
+    color: #EDDD5E;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+.review-card p {
+    font-family: 'Montserrat', sans-serif;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.user-info h5 {
+    font-size: 16px;
+    color: #404A3D;
+}
+
+.user-role {
+    font-size: 12px;
+    color: #999999;
+}
+
+
+.farmers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.farmer-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.farmer-img {
+    height: 320px;
+    border-radius: 30px;
+}
+
+.role-tag {
+    color: #999999;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.farmer-card h4 {
+    font-size: 22px;
+    color: #404A3D;
+}
+
+
+.main-footer {
+    background-color: #13705A;
+    color: white;
+    padding: 60px 80px 20px 80px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links, .footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.subscribe-box {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-box input {
+    background: #EAE3A1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 220px;
+}
+
+.go-btn {
+    background: #F7C35F;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    border-top: 1px solid white;
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: right;
+}

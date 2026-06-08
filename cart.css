@@ -1,0 +1,402 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FCFFE8; 
+    color: #000000;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.logo-circle, .logo-circle.big { background-image: url('images/logo.png'); }
+
+
+.img-duck-egg { background-image: url('images/download_6.jpg'); }
+.img-pure-honey { background-image: url('images/zcz8f72orNC9GKgm3tbqMY.jpg'); }
+.img-dorper-sheep { background-image: url('images/CI_Sheep-dipping-or-Sustainable-Behaviour-Change-copy.jpg'); }
+.img-mozzarella { background-image: url('images/mozzarella-cheese-making-recipe-cultured-826097.png'); }
+.img-comb-honey { background-image: url('images/pure_honey_800x800.png'); }
+.img-feta-cheese { background-image: url('images/feta-cheese.png'); }
+.img-cow-rib { background-image: url('images/Short-Rib-of-Beef-Rack2.png'); }
+
+
+.logo-circle, .logo-circle.big, .item-thumbnail {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #D9D9D9;
+}
+
+
+.main-header {
+    background-color: #13705A;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: #FFFFFF;
+    font-size: 36px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.user-profile-btn {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.dashboard-workspace {
+    display: flex;
+    width: 100%;
+    min-height: 1100px;
+}
+
+
+.sidebar-navigation {
+    width: 86px;
+    background-color: #07202C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    gap: 45px; 
+}
+
+.side-icon {
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: none;
+    color: #838383;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-icon:hover, .side-icon.active {
+    color: #2078BF;
+}
+
+
+.main-content-panel {
+    flex: 1;
+    padding: 50px 80px;
+}
+
+.cart-main-title {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    color: #1C6A31;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+
+.cart-split-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    width: 100%;
+    max-width: 1700px;
+}
+
+
+.cart-items-list {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cart-item-card {
+    background: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 12px;
+    height: 110px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-thumbnail {
+    width: 50px;
+    height: 45px;
+    border-radius: 4px;
+}
+
+.item-details {
+    flex: 1;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.item-details h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #093C1C;
+}
+
+.add-more-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #007E2F;
+    text-decoration: underline;
+}
+
+.item-price-quantity {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.item-unit-display {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #007E2F;
+    min-width: 80px;
+    text-align: right;
+}
+
+
+.quantity-counter {
+    background: #007E2F;
+    border-radius: 30px;
+    width: 170px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.quantity-counter button {
+    background: transparent;
+    border: none;
+    color: #F1F1F1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.quantity-val {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #F1F1F1;
+}
+
+
+.invoice-summary-panel {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.invoice-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #247741;
+    text-decoration: underline;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.invoice-card-box {
+    background: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.invoice-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invoice-row .label {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #000000;
+}
+
+.invoice-row .value {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #000000;
+    text-align: right;
+}
+
+.alert-red {
+    color: #FD1010 !important;
+}
+
+.total-row {
+    border-top: 1px dashed #EDEDED;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.total-row .label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    color: #007E2F;
+}
+
+.highlight-green {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    color: #007E2F !important;
+}
+
+
+.checkout-submit-btn {
+    width: 100%;
+    max-width: 400px;
+    height: 55px;
+    background: #007E2F;
+    border-radius: 36px;
+    border: none;
+    color: #FDFDFD;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: -0.03em;
+    cursor: pointer;
+    margin-top: 40px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.2s;
+}
+
+.checkout-submit-btn:hover {
+    background-color: #045a23;
+}
+
+
+.main-footer {
+    background-color: #13705A;
+    color: white;
+    padding: 60px 80px 20px 80px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links, .footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.logo-circle.big {
+    width: 80px;
+    height: 80px;
+}
+
+
+
+.subscribe-box {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-box input {
+    background: #EAE3A1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 220px;
+    outline: none;
+}
+
+.go-btn {
+    background: #F7C35F;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    border-top: 1px solid white;
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: right;
+}

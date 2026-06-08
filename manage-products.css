@@ -1,0 +1,376 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FCFFE8;
+    color: #1E1E1E;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.logo-circle, .logo-circle.big {
+    background-image: url('images/logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.main-header {
+    background-color: #13705A;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-area { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+
+.logo-circle { 
+    width: 60px; 
+    height: 60px; 
+    background-color: #FAFFD7; 
+    border-radius: 50%; 
+}
+
+
+.logo-text { 
+    font-family: 'Oleo Script Swash Caps', cursive; 
+    color: #FFFFFF; 
+    font-size: 36px; 
+}
+
+.nav-links { 
+    display: flex; 
+    align-items: 
+    center; gap: 40px; 
+}
+
+
+.nav-links a { 
+    color: #FFFFFF; 
+    text-decoration: none; 
+    font-family: 'Nunito Sans', 
+    sans-serif; 
+    font-weight: 900; 
+    font-size: 20px; 
+}
+
+
+.nav-links a:hover { 
+    color: #FAFFD7; 
+}
+
+.login-btn { 
+    background-color: #FFFFFF; 
+    border: 1px solid #000000; 
+    padding: 10px 25px; 
+    border-radius: 25px; 
+    font-family: 'Nunito Sans', sans-serif; 
+    font-weight: 900; 
+    font-size: 18px; 
+}
+
+
+.admin-dashboard-layout {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+
+.admin-sidebar-menu {
+    width: 360px;
+    background-color: #C1EDF9;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border-right: 1px solid rgba(0,0,0,0.05);
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-label-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #054C39;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.menu-link-btn {
+    width: 100%;
+    background: transparent;
+    border: none;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #0DA0D5;
+    cursor: pointer;
+    padding: 8px 5px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.menu-link-btn:hover {
+    padding-left: 10px;
+    background: rgba(13, 160, 213, 0.05);
+}
+
+.menu-link-btn.active {
+    color: #43328F;
+    background: rgba(67, 50, 143, 0.08);
+    padding-left: 10px;
+}
+
+
+.form-workspace-panel {
+    flex: 1;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.portal-main-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    color: #054C39;
+    text-decoration: underline;
+}
+
+
+.inventory-logs-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.invoice-data-table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 30px 40px #E3F3FF;
+}
+
+.invoice-data-table th, .invoice-data-table td {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.invoice-data-table th {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    background: #FFFFFF;
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.invoice-data-table td {
+    font-family: 'Ubuntu', sans-serif;
+    color: #000000;
+}
+
+.invoice-data-table tr:hover td {
+    background-color: #FAFCFF;
+}
+
+.edit-action-link {
+    color: #2078BF;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.profile-card-form {
+    background: #FFFFFF;
+    box-shadow: 0px 30px 40px #E3F3FF;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #E0E0E0;
+    margin-top: 20px;
+    animation: slideUpFade 0.3s ease-out;
+}
+
+
+.profile-card-form.hidden-form {
+    display: none !important;
+}
+
+.form-action-title {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    color: #054E51;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.form-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-input-group label {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #000000;
+}
+
+.form-input-group input, .form-input-group select, .form-input-group textarea {
+    width: 100%;
+    height: 65px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    color: #000000;
+}
+
+.form-input-group textarea {
+    height: auto;
+    padding: 15px 20px;
+}
+
+.action-submit-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.save-profile-btn {
+    min-width: 250px;
+    height: 65px;
+    background: #06864D;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: background 0.2s;
+}
+
+.save-profile-btn:hover { 
+    background: #045a33; 
+}
+
+.save-profile-btn.delete-btn { 
+    background: #F4585B; 
+}
+
+.save-profile-btn.delete-btn:hover { 
+    background: #c93b3e; 
+}
+
+
+.main-footer {
+    background-color: #13705A;
+    color: white;
+    padding: 60px 80px 20px 80px;
+    margin-top: auto;
+}
+
+.footer-top { 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+
+
+.logo-circle.big { 
+    width: 80px; 
+    height: 80px; 
+}
+
+
+.footer-links, .footer-newsletter { 
+    display: flex; 
+    flex-direction: 
+    column; gap: 12px; 
+}
+
+
+.footer-links a { 
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px; }
+
+
+.footer-links a:hover { 
+    text-decoration: underline; 
+}
+
+.subscribe-box { 
+    display: flex; gap: 10px; 
+}
+
+.subscribe-box input { 
+    background: #EAE3A1; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 20px; 
+    width: 220px; 
+    outline: none; 
+}
+
+.go-btn { 
+    background: #F7C35F; 
+    border: none; 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+}
+
+.footer-bottom { 
+    border-top: 1px solid white; 
+    padding-top: 20px; 
+    margin-top: 30px; 
+    text-align: right; 
+}
+
+
+@keyframes slideUpFade {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

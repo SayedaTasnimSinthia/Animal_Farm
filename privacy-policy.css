@@ -1,0 +1,204 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FCFFE8; 
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.logo-circle, .logo-circle.big {
+    background-image: url('images/logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FAFFD7;
+}
+
+
+.main-header {
+    background-color: #13705A;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: #FFFFFF;
+    font-size: 36px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.login-btn {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+.policy-workspace-area {
+    flex: 1;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 60px 80px 100px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.policy-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.policy-main-title {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: #0B464E;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.policy-content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.policy-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.policy-text-paragraph {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #1A1DAC;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    text-align: justify; 
+}
+
+
+.main-footer {
+    background-color: #13705A;
+    color: white;
+    padding: 60px 80px 20px 80px;
+    margin-top: auto;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links, .footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.subscribe-box {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-box input {
+    background: #EAE3A1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 315px;
+    height: 55px;
+    outline: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+.go-btn {
+    background: #F7C35F;
+    border: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: 'Livvic', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #1A1A1A;
+    text-transform: uppercase;
+}
+
+.footer-bottom {
+    border-top: 1px solid #FFFFFF;
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: right;
+}
+
+.footer-bottom p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
