@@ -8,6 +8,7 @@ function logoutUser() {
     window.location.href = "logout.php";
 }
 
+
 const monthsList = [
     "JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE",
     "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"
