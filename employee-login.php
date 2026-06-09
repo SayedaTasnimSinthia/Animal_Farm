@@ -306,7 +306,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </style>
 </head>
 <body>
-
     <header class="main-header">
         <div class="logo-area">
             <div class="logo-circle"></div>

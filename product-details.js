@@ -84,7 +84,6 @@ function triggerAddToCartFromDetails() {
 }
 
 
-
 document.body.addEventListener("click", (event) => {
     if (event.target && event.target.classList.contains("go-btn")) {
         event.preventDefault();

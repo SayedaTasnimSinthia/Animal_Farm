@@ -32,6 +32,8 @@ if(!isset($_SESSION['customer_logged_in'])) { header("Location: customer-login.h
         </nav>
     </header>
 
+    
+
     <div class="dashboard-workspace">
         <aside class="sidebar-navigation">
             <button class="side-icon" onclick="location.href='customer-dashboard.html'">🏠</button>

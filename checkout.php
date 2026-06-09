@@ -43,7 +43,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['place_order_action_btn
             window.location.href = 'order-history.php';
           </script>";
     exit();
-}
+}  
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

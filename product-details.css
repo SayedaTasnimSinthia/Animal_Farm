@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
 }
 
-/* --- Shared Layout Assets from Products Page --- */
+
 .logo-circle, .logo-circle.big { background-image: url('images/logo.png'); }
 
 .logo-circle, .logo-circle.big, .product-visual-box {
@@ -79,7 +79,7 @@ body {
     cursor: pointer;
 }
 
-/* --- Workspace Structure --- */
+
 .details-hero-banner {
     width: 100%;
     height: 160px;
@@ -176,7 +176,7 @@ body {
     color: #404A3D;
 }
 
-/* --- Specification Details --- */
+
 .specs-card h3 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
@@ -212,7 +212,7 @@ body {
     white-space: nowrap;
 }
 
-/* --- Control Modifiers --- */
+
 .details-actions-row {
     display: flex;
     justify-content: center;
@@ -244,7 +244,7 @@ body {
     background-color: #0b1c1a;
 }
 
-/* --- Main Footer Layout --- */
+
 .main-footer {
     background-color: #13705A;
     color: white;
