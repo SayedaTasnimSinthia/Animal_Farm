@@ -13,7 +13,7 @@ const monthsList = [
     "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"
 ];
 
-let currentMonthIndex = 5; // Default view anchor initialized to June to match current workspace dates
+let currentMonthIndex = 5; 
 let currentYear = 2026;
 let chosenDateNumber = "";
 

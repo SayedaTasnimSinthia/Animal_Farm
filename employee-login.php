@@ -314,9 +314,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <nav class="nav-links">
             <a href="index.html">Home</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="product.html">Products</a>
-            <a href="cart.html">Cart 🛍️</a>
+            <a href="contact.php">Contact Us</a>
+            <a href="product.php">Products</a>
+            <a href="cart.php">Cart 🛍️</a>
         </nav>
     </header>
 

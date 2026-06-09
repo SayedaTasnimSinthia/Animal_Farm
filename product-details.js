@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (productIndexId !== null) {
         loadDynamicProductDetails(parseInt(productIndexId));
     } else {
-        // Fallback: If page is loaded manually without arguments, display index row 0
+        
         loadDynamicProductDetails(0);
     }
 });

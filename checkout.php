@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['place_order_action_btn
         </div>
         <nav class="nav-links">
             <a href="index.html">Home</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.php">Contact Us</a>
             <a href="product.php">Products</a>
             <a href="#" onclick="logoutUser()">Logout</a>
             <button class="user-profile-btn">🙍‍♂️ <span id="dynamic-username"><?php echo htmlspecialchars($_SESSION['customer_name']); ?></span></button>

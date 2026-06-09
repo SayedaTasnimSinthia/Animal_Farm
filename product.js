@@ -7,13 +7,12 @@ function saveProfileData() {
     const profileAddress = document.getElementById("prof-address").value.trim();
     const profileNewPass = document.getElementById("prof-new-pass").value;
 
-    // 1. Basic validation check
+    
     if(profileName === "" || profilePhone === "" || profileEmail === "" || profileCity === "" || profileAddress === "") {
         alert("Please make sure to fill out all the necessary required input fields marked with an asterisk (*).");
         return;
     }
 
-    // 2. Package the form data together
     const payload = {
         name: profileName,
         phone: profilePhone,

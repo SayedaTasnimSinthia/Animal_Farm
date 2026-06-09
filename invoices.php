@@ -22,7 +22,7 @@ if(!isset($_SESSION['customer_logged_in'])) { header("Location: customer-login.h
         </div>
         <nav class="nav-links">
             <a href="index.html">Home</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.php">Contact Us</a>
             <a href="product.php">Products</a>
             <a href="#" onclick="logoutUser()">Logout</a>
             <button class="user-profile-btn">

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Farm 360 - Product Details</title>
     <link rel="stylesheet" href="product-details.css">
-    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;900&family=Poppins:wght@400;700;900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&family=Oleo+Script+Swash+Caps&family=Poppins:wght@700;900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -17,10 +17,10 @@
         </div>
         <nav class="nav-links">
             <a href="index.html">Home</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.php">Contact Us</a>
             <a href="product.php">Products</a>
             <a href="cart.php">Cart 🛍️</a>
-            <button class="login-btn" id="header-user-badge">Login / Sign Up</button>
+            <button class="login-btn" id="header-user-btn" onclick="window.location.href='login.html'">Login / Sign Up</button>
         </nav>
     </header>
 
@@ -85,7 +85,7 @@
         let productObj = null;
         document.addEventListener("DOMContentLoaded", () => {
             const name = localStorage.getItem("currentUserName");
-            if(name) { document.getElementById("header-user-badge").textContent = name; }
+            if(name) { document.getElementById("header-user-btn").textContent = name; }
             
             productObj = JSON.parse(localStorage.getItem("selectedProductJson"));
             if(productObj) {
@@ -99,6 +99,7 @@
                 if(productObj.category === "Produce") { document.getElementById("gender-spec-row").style.display = "none"; }
             }
         });
+
         function triggerAddToCartFromDetails() {
             if(!productObj) return;
             let cart = JSON.parse(localStorage.getItem('farmCart')) || [];
@@ -106,7 +107,7 @@
             if(match) { match.quantity += 1; } 
             else { cart.push({ name: productObj.name, price: parseFloat(productObj.price), image: productObj.image, quantity: 1 }); }
             localStorage.setItem('farmCart', JSON.stringify(cart));
-            alert('Item added to your shopping cart! 🛍️');
+            alert(productObj.name + ' added to your shopping cart! 🛍️');
         }
     </script>
 </body>
